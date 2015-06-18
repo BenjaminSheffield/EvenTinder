@@ -7,6 +7,7 @@ using System.Web.Http;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using EventLocator;
 using EventLocator.Controllers;
+using EventLocator.Providers;
 
 namespace EventLocator.Tests.Controllers
 {
@@ -76,6 +77,13 @@ namespace EventLocator.Tests.Controllers
             controller.Delete(5);
 
             // Assert
+        }
+
+        [TestMethod]
+        public void GetEventsList()
+        {
+            GetEvents getEvents = new GetEvents();
+            getEvents.GetEventsList();
         }
     }
 }
