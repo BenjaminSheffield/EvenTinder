@@ -7,7 +7,6 @@ namespace EventLocator.Models
 {
     public class EventListing
     {
-
         public class Rootobject
         {
             public Attributes attributes { get; set; }
@@ -35,17 +34,17 @@ namespace EventLocator.Models
             public bool is_featured { get; set; }
             public bool is_cancelled { get; set; }
             public string restrictions { get; set; }
-            public Point point { get; set; }
+            //public Point point { get; set; }
             public string username { get; set; }
             public string timezone { get; set; }
-            public Location location { get; set; }
-            public Category category { get; set; }
+            //public Location location { get; set; }
+            //public Category category { get; set; }
             public string datetime_summary { get; set; }
-            public Sessions sessions { get; set; }
-            public Ticket_Types ticket_types { get; set; }
-            public Artists artists { get; set; }
-            public Web_Sites2 web_sites { get; set; }
-            public Images2 images { get; set; }
+            //public Sessions sessions { get; set; }
+            //public Ticket_Types ticket_types { get; set; }
+            //public Artists artists { get; set; }
+            //public Web_Sites2 web_sites { get; set; }
+            public Images images { get; set; }
         }
 
         public class Point

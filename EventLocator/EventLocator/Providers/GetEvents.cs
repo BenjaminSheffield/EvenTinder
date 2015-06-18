@@ -29,16 +29,17 @@ namespace EventLocator.Providers
 
             {
                 string content = response.Content.ReadAsStringAsync().Result;
-
+              
                EventListing.Rootobject rootObject = new EventListing.Rootobject();
 
                JsonConvert.PopulateObject(content, rootObject);
-//
-//                foreach (var eventItem in rootObject.events)
-//                {
-//                    db.Events.Add(eventItem);
-//                }
-                //db.SaveChanges();
+                //var image = rootObject.
+               foreach (var eventItem in rootObject.events)
+               {
+                   eventItem.images.ToString();
+                   db.Events.Add(eventItem);
+               }
+               db.SaveChanges();
             }
         }
 
