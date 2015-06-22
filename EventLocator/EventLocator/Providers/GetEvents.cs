@@ -36,7 +36,7 @@ namespace EventLocator.Providers
                 //var image = rootObject.
                foreach (var eventItem in rootObject.events)
                {
-                   eventItem.images.ToString();
+                   //eventItem.images.ToString();
                    db.Events.Add(eventItem);
                }
                db.SaveChanges();
