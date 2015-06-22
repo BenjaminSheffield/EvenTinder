@@ -44,7 +44,7 @@ namespace EventLocator.Models
             //public Ticket_Types ticket_types { get; set; }
             //public Artists artists { get; set; }
             //public Web_Sites2 web_sites { get; set; }
-            public Images images { get; set; }
+            //public Images images { get; set; }
         }
 
         public class Point
